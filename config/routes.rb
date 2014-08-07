@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root"pages#home"
   get "about" => "pages#about" # this creates a path, like about_path
-  get "rissy" => "pages#rissy" #this would create rissy_path 
-
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
