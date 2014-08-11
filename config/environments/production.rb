@@ -83,7 +83,6 @@ Rails.application.configure do
 
   #note to set this to your actual host
   config.action_mailer.default_url_options = { :host => 'onemonthrailslarissa.herokuapp.com' }
-end
 
 
 #sets paperclip to upload images to amazon s3
@@ -95,3 +94,5 @@ config.paperclip_defaults = {
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
+
+end
