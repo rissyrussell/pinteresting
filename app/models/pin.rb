@@ -3,7 +3,7 @@ class Pin < ActiveRecord::Base
 
 	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" },
 	:storage => :s3,
-            :bucket  => ENV['S3_BUCKET_NAME']
+            :bucket  => ENV['AWS_BUCKET']
     validates :image, presence: true
     validates :description, presence: true
 
